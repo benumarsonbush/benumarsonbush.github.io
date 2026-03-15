@@ -77,6 +77,10 @@ body {
     height: 100%;
 }
 
+#page1 p {
+    margin-bottom: 0;
+}
+
 .linetext {
     color: #FDF2ED;
     -webkit-text-stroke: 1pt;
@@ -87,12 +91,25 @@ body {
     background-color: #FCE5DC;
 }
 
+.button {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    margin-bottom: 100px;
+}
+
 .button a img{
     width: 70px;
     height: 70px;
     object-fit: fill;
-    margin-top: 20px;
-    margin-bottom: 30px;
+
+}
+
+.vertical_line {
+    width:3px;
+    height:100%;
+    position:absolute;
+    background-color: black;
 }
 
 #page2 {
@@ -177,7 +194,6 @@ body {
     border-radius: 12px;
     text-align: center;
     background-color:#FCE5DC;
-    width: 18%;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -192,8 +208,36 @@ body {
     position: absolute;
     width: 600px;
     background-color: black;
-    height: 2px;
+    height: 3px;
     bottom: 57px;
-    margin-left:15px;
+    margin-left:85px;
     z-index:-15;
+}
+
+#page3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.movie {
+    display: inline-flex;
+    align-content: flex-start;
+    align-items: flex-start;
+}
+
+.wa {
+    display: inline-flex;
+    margin-top: 150px;
+}
+
+.listup {
+    font-size: 60pt;
+    font-weight: bold;
+    border: black solid 2px;
+    padding:7px;
+}
+
+.movie_info h3{
+    
 }
