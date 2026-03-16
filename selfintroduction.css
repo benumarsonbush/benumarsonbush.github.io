@@ -70,6 +70,9 @@ body {
     font-weight: bold;
     background-color: #FDF2ED;
     text-align:left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #page1 {
@@ -83,6 +86,7 @@ body {
 
 #page1 p {
     margin-bottom: 0;
+    margin-right: 95px;
 }
 
 .linetext {
@@ -96,8 +100,6 @@ body {
 }
 
 .button {
-    display: flex;
-    justify-content: center;
     margin-top: 60px;
     margin-bottom: 100px;
 }
@@ -109,10 +111,21 @@ body {
 
 }
 
+.wholepage {
+    position: relative;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .vertical_line {
     width:3px;
-    height:100%;
+    height: 67%;
     position:absolute;
+    left: 200px;
+    bottom: 500px;
+    z-index: -13;
     background-color: black;
 }
 
@@ -120,6 +133,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 50px;
 }
 
 .sidebar {
@@ -151,6 +165,7 @@ body {
 
 .profile_info {
     margin-top: 40px;
+    background-color: #FDF2ED;
 }
 
 .profile_info h2 {
@@ -221,12 +236,12 @@ body {
 #page3 {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    margin-left: 90px;
+    padding-top: 50px;
 }
 
 .movie {
     display: inline-flex;
-    align-content: flex-start;
     align-items: baseline;
 }
 
@@ -238,14 +253,15 @@ body {
     margin-bottom: 0;
 }
 
-.movie p {
-    font-weight: 400;
-}
-
-.insta_hashtag a {
+.movie_info p a {
+    text-decoration-line: none;
     font-size: 18pt;
     font-weight: 440;
     color: #295DBB;
+}
+
+.movie p {
+    font-weight: 400;
 }
 
 .insta_hashtag:hover {
@@ -279,18 +295,19 @@ body {
     font-weight: bold;
     border: black solid 2px;
     padding:7px;
+    background-color: #FDF2ED;
 }
 
 #page4 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    margin-right:416px;
+    padding-top: 50px;
 }
 
 #page4 .quote {
     display: flex;
     flex-direction: column;
     text-align: left;
+    background-color: #FDF2ED;
 }
 
 #page4 h2 {
